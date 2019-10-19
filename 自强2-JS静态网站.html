@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript.com</title>
+    <style type="text/css">
+        #A{
+            position: absolute;
+            top: 28px;
+            left: 40px;
+            height: 65px;
+        }
+        #B{
+            background-image: url("b.jpg");
+            width: 100%;
+            height: 620px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*text-align: center;*/
+        }
+        #C{
+            width: 506px;
+            height: 430px;
+        }
+        #D{
+            width: 506px;
+            height: 430px;
+        }
+        #E{
+            width: 506px;
+            height: 430px;
+        }
+        .head1{
+            height: 120px;
+            width: 100%;
+            color: #222222;
+            background: #000000;
+            font: 14px"gotham ssm a","gotham ssm b","gotham ssm c";
+            margin: 0;
+        }
+        .menu1{
+            text-align: right;
+            background: black;
+            font-size: 14px;
+            color: #ffffff;
+            position: absolute;
+            float: none;
+            top: 40px;
+            right: 40px;
+        }
+        .word1{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.1;
+            padding: 15px 30px;
+            margin: 0 0 20px;
+            white-space: normal;
+            border-radius: 5px;
+            color: #ffffff;
+            background: #e80a89;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: box-shadow .3s ease-in-out;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .word2{
+            text-transform: capitalize;
+            margin-left: 50px;
+            line-height: inherit;
+            cursor: pointer;
+            text-decoration: none;
+            box-sizing: inherit;
+            font-weight: 500;
+        }
+        .body1{
+            margin: 0;
+            box-sizing: inherit;
+        }
+        .center{
+            max-width: 900px;
+            max-height: 370px;
+            position: absolute;
+            margin-left:309px;
+            margin-right: 309px;
+            margin-top: 100px;
+            padding-right: 15px;
+            padding-left: 15px;
+            text-align: center;
+        }
+        .title1{
+            display: block;
+            margin-block-start: 0;
+            margin-block-end:0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            max-height: 25px;
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 1.4;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #aaaaaa;
+        }
+        .title2{
+            font-size: 66px;
+            font-weight: 700;
+            line-height: 1;
+            /*line-height: 1.2;*/
+            /*font-size: 35px;*/
+            margin-block-start: 0;
+            text-transform: none;
+            font-family: gotham ssm a,gotham ssm b,sans-serif;
+            color: #ffffff;
+            margin: 0 0 40px;
+            /*margin-top: 0;*/
+            letter-spacing: 3px;
+        }
+        .sentence1{
+            display: block;
+            margin-block-start: 0;
+            margin-block-end: 1em;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.8;
+            font-family: inherit;
+            text-rendering: optimizeLegibility;
+            color: #cccccc;
+            margin: 0 0 20px;
+            letter-spacing: 1px;
+        }
+        .javascript-hero code {
+            color: #555;
+            padding: 5px;
+        }
+        code{
+            border-radius: 3px;
+            background-color: #f8f8f8;
+            border-color: #dfdfdf;
+            border-style: solid;
+            border-width: 1px;
+            color: #333;
+            font-family: Consolas,liberation mono,Courier,monospace;
+            font-weight: 400;
+            padding: 5px;
+        }
+        .last{
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(0,0,0,1) 100%);
+            position: absolute;
+            margin-top: 520px;
+        }
+        .mi{
+            size: 16px;
+        }
+        .in{
+            background: rgba(18,18,18,.9);
+            height: 40px;
+            padding: 10px 10px 15px 40px;
+            border: 0;
+            color: white;
+            font-size: 22px;
+            font-weight: 500;
+            transition: background .4s linear;
+            font-family: monospace;
+        }
+        #JS{
+            -webkit-appearance: none;
+            border-radius: 0;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            text-rendering: auto;
+            color: initial;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0;
+            text-shadow: none;
+            font: 400 13px Arial;
+            max-height: 40px;
+            border: #121212;
+            background: #121212;
+        }
+        .arrow{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            transform: rotate(45deg);
+            top: 50%;
+            left: 18px;
+            margin-top:115px;
+            position: absolute;
+        }
+        .menu2{
+            margin-top: 0;
+            margin-left: 0 ;
+            text-align: center;
+        }
+        .block1{
+            margin: -310px 0 -100px 0;
+        }
+        .title3{
+            font-weight: 700;
+            font-size: 14px;
+            color: #aaaaaa!important;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+
+        }
+        .title4{
+            display: inline;
+            font-size: 32px;
+            line-height: 48px;
+            color: white;
+            /*margin: 0 0 30px;*/
+        }
+        .know1{
+            margin: 3px 0 8px;
+        }
+        .know2{
+            margin: 0 0 20px;
+        }
+        /*.foot{
+            height: 100px;
+            background-color: #000;
+            display: block;
+            margin-bottom: 0;
+        }
+        .logo1{
+            max-height: 40px;
+
+        }*/
+    </style>
+</head>
+<body class="body1">
+<img id="A" src="a.png" alt="JavaScript.com">
+<header class="head1">
+    <div class="menu1">
+        <a class="word1">try javascript</a>
+        <a class="word2">learn</a>
+        <a class="word2">resources</a>
+        <a class="word2">about</a>
+    </div>
+</header>
+<div id="B">
+    <div class="center">
+        <div class="title1">
+            <a>ready to try</a>
+        </div>
+        <div class="title2">
+            <a>
+                JavaScript?
+            </a>
+        </div>
+        <div class="sentence1">
+            <a>
+                Begin learning here by typing in your first name surrounded by quotation marks, and
+                <br>ending with a semicolon. For example, you could type the name
+                <code>"Jamie";</code>
+                &nbsp;and then hit
+                <br>enter.
+            </a>
+        </div>
+        <div class="in">
+            <!--<a class="mi">></a>-->
+            <input type="text" style="border: 0" id="JS">
+            <span class="arrow"></span>
+        </div>
+    </div>
+    <div class="last"></div>
+</div>
+<div class="menu2">
+    <div style="width: 33.3%;float: left"><input type="image" src="c.jpg" id="C" alt="photo1">
+        <div class="block1">
+            <div class="know1">
+                <a class="title3">introduction</a>
+            </div>
+            <div class="know2">
+                <a class="title4">
+                    Courses and paths
+                    <br>to get you going
+                </a>
+            </div>
+            <div>
+                <a class="word1">get started</a>
+            </div>
+        </div>
+    </div>
+    <div style="width: 33.3%;float: left"><input type="image" src="d.jpg" id="D" alt="photo2">
+        <div class="block1">
+            <div class="know1">
+                <a class="title3">skill assessment</a>
+            </div>
+            <div class="know2">
+                <a class="title4">
+                    Know where your
+                    <br>skills stand
+                </a>
+            </div>
+            <div>
+                <a class="word1">measure your skills</a>
+            </div>
+        </div>
+    </div>
+    <div style="width: 33.3%;float: left"><input type="image" src="e.jpg" id="E" alt="photo3">
+        <div class="block1">
+            <div class="know1">
+                <a class="title3">introduction</a>
+            </div>
+            <div class="know2">
+                <a class="title4">
+                    See where
+                    <br>JavaScript ranks
+                </a>
+            </div>
+            <div>
+                <a class="word1">dive into the data</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<footer class="foot">
+    <div class="left">
+        <a>
+            <img src="a.png" alt="JavaScript.com" class="logo1">
+        </a>
+    </div>
+</footer>-->
+</body>
+</html>
