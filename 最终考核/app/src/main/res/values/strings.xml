@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hello World</string>
+    <string name="welcome">
+        Welcome
+    </string>
+    <string name="newworld">New World</string>
+    <string name="back">Back</string>
+</resources>
